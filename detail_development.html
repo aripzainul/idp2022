@@ -1,0 +1,766 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Meta Responsive tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--Favicon Icon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--Custom style.css-->
+    <link rel="stylesheet" href="assets/css/quicksand.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!--Datatable-->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+
+    <title>Individual Development Program</title>
+  </head>
+
+  <body>
+    <!--Page Wrapper-->
+    <div class="container-fluid">
+      <!--Header-->
+      <div class="row header shadow-sm">
+        <!--Logo-->
+        <div class="col-sm-3 pl-0 text-center header-logo">
+          <div class="bg-theme mr-3 pt-3 pb-2 mb-0">
+            <h3 class="logo"><a href="#" class="text-secondary logo">Individual Dev. Program</a></h3>
+          </div>
+        </div>
+        <!--End Logo-->
+
+        <!--Header Menu-->
+        <div class="col-sm-9 header-menu pt-2 pb-0">
+          <div class="row">
+            <!--Menu Icons-->
+            <div class="col-sm-4 col-8 pl-0">
+              <!--Toggle sidebar-->
+              <span class="menu-icon" onclick="toggle_sidebar()">
+                <span id="sidebar-toggle-btn"></span>
+              </span>
+              <!--End Toggle sidebar-->
+            </div>
+            <!--End Menu Icons-->
+
+            <!--avatar-->
+            <div class="col-sm-8 col-4 text-right flex-header-menu justify-content-end">
+              <div class="mr-4">
+                <a
+                  class=""
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img src="assets/img/my_img/arip.jpg" alt="Adam" class="rounded-circle" width="40px" height="40px" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-13" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><i class="fa fa-home pr-2"></i> Go to HC Online</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fa fa-power-off pr-2"></i> Logout</a>
+                </div>
+              </div>
+            </div>
+            <!--End avatar-->
+          </div>
+        </div>
+        <!--End Header Menu-->
+      </div>
+      <!--Header-->
+
+      <!--Main Content-->
+      <div class="row main-content">
+        <!--Sidebar left-->
+        <div class="col-sm-3 col-xs-6 sidebar pl-0">
+          <div class="inner-sidebar mr-3">
+            <!--Image Avatar-->
+            <div class="avatar text-center">
+              <img src="assets/img/my_img/arip.jpg" alt="" class="rounded-circle" />
+              <p><strong>Arip Zainul Faizin</strong></p>
+              <span class="text-warning small"><strong>Organization Development Officer</strong></span>
+            </div>
+            <!--End Image Avatar-->
+
+            <!--Sidebar Navigation Menu-->
+            <div class="sidebar-menu-container">
+              <ul class="sidebar-menu mt-4 mb-4">
+                <li class="parent">
+                  <a href="index.html" class=""
+                    ><i class="fa fa-dashboard mr-3"></i>
+                    <span class="none">Homepage </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="training.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Master Training </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="blogs.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Master Blogs </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="set_development.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Set Training & Competency </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="#" class=""
+                    ><i class="fa fa-home mr-3"></i>
+                    <span class="none">Go to HC Online </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="#" class=""
+                    ><i class="fa fa-power-off mr-3"></i>
+                    <span class="none">Log Out </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Sidebar Navigation Menu-->
+          </div>
+        </div>
+        <!--End Sidebar left-->
+
+        <!--Content right-->
+        <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
+          <h5 class="mb-0 text-theme"><strong>Set Training Needs & Summary Assessment</strong></h5>
+
+          <div class="row mt-3">
+            <!--Employee Information-->
+            <div class="col-sm-12">
+              <div class="mt-4 mb-3 p-3 button-container bg-white border shadow-sm">
+                <h6 class="mb-4"><strong>Employee Information</strong></h6>
+                <form action="">
+                  <div class="form-group row">
+                    <label class="control-label col-sm-3" for="name">Nama</label>
+                    <div class="col-sm-9">
+                      <input readonly type="text" class="form-control" id="name" placeholder="Employee" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-3" for="type">Jenis IDP</label>
+                    <div class="col-sm-9">
+                      <input readonly type="text" class="form-control" id="type" placeholder="Promosi Jabatan" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-3" for="role-plan">Role Existing</label>
+                    <div class="col-sm-9">
+                      <input readonly type="text" class="form-control" id="role-plan" placeholder="PMOR" />
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-3" for="role-plan">Role Plan</label>
+                    <div class="col-sm-9">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="role-plan"
+                        placeholder="Branch Market Sub Dept Head"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!--End Employee Information-->
+          </div>
+
+          <!-- Training Needs -->
+          <h5 class="mb-3 mt-3 text-theme"><strong>Set Training Needs</strong></h5>
+          <div class="row">
+            <div class="col-sm-12 mb-3">
+
+              <div class="p-3 button-container bg-white border shadow-sm">
+                <form action="" class="form-horizontal">
+                  <div class="form-group row">
+                    <div class="col-sm-4 col-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training1" />
+                        <label class="custom-control-label" for="training1">Training 1</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training2" />
+                        <label class="custom-control-label" for="training2">Training 2</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training3" />
+                        <label class="custom-control-label" for="training3">Training 3</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training4" />
+                        <label class="custom-control-label" for="training4">Training 4</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training5" />
+                        <label class="custom-control-label" for="training5">Training 5</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training6" />
+                        <label class="custom-control-label" for="training6">Training 6</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training7" />
+                        <label class="custom-control-label" for="training7">Training 7</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training8" />
+                        <label class="custom-control-label" for="training8">Training 8</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training9" />
+                        <label class="custom-control-label" for="training9">Training 9</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training10" />
+                        <label class="custom-control-label" for="training10">Training 10</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training11" />
+                        <label class="custom-control-label" for="training11">Training 11</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training12" />
+                        <label class="custom-control-label" for="training12">Training 12</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training13" />
+                        <label class="custom-control-label" for="training13">Training 13</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training14" />
+                        <label class="custom-control-label" for="training14">Training 14</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training15" />
+                        <label class="custom-control-label" for="training15">Training 15</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training16" />
+                        <label class="custom-control-label" for="training16">Training 16</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training17" />
+                        <label class="custom-control-label" for="training17">Training 17</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training18" />
+                        <label class="custom-control-label" for="training18">Training 18</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training19" />
+                        <label class="custom-control-label" for="training19">Training 19</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training20" />
+                        <label class="custom-control-label" for="training20">Training 20</label>
+                      </div>
+                    </div>
+
+                    <div class="col-sm-4 col-12">
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training21" />
+                        <label class="custom-control-label" for="training21">Training 21</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training22" />
+                        <label class="custom-control-label" for="training22">Training 22</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training23" />
+                        <label class="custom-control-label" for="training23">Training 23</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training24" />
+                        <label class="custom-control-label" for="training24">Training 24</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training25" />
+                        <label class="custom-control-label" for="training25">Training 25</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training26" />
+                        <label class="custom-control-label" for="training26">Training 26</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training27" />
+                        <label class="custom-control-label" for="training27">Training 27</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training28" />
+                        <label class="custom-control-label" for="training28">Training 28</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training29" />
+                        <label class="custom-control-label" for="training29">Training 29</label>
+                      </div>
+                      <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="training30" />
+                        <label class="custom-control-label" for="training30">Training 30</label>
+                      </div>
+                    </div>
+                  </div>
+                  <p>
+                    <em>klik tandai (centang) pada judul training untuk memberikan training tersebut pada karyawan terkait</em>
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+          <!-- End Training Section -->
+
+
+          <!-- Competency Assessment -->
+          <h5 class="mb-3 mt-3 text-theme"><strong>Competency Assessment</strong></h5>
+          <div class="row mt-3">
+            <div class="col-sm-12 col-12 mb-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="assessment" />
+                <label class="custom-control-label" for="assessment">Need Assessment</label>
+              </div>
+              <p>
+                <em><small>klik tandai (centang) jika karyawan terkait dilakukan proses assessment</small></em>
+              </p>
+            </div>
+
+            <!--Standard Competency-->
+            <div class="col-sm-6">
+              <div class="mt-1 mb-3 p-3 button-container border bg-white shadow-sm custom-tabs">
+                <h6 class="mb-3"><strong>Standard/Requirement</strong></h6>
+                <form action="" class="mt-3">
+                  <p class="text-primary"><strong>Core Competencies :</strong></p>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core1">Integrity</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core1"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core2">Creative-Innovative</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core2"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core3">Drive to Excellence</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core3"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core4">Caring</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core4"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core5">Continuous Learning</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core5"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core6">Persistent</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="core6"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+
+                  <p class="text-primary"><strong>Structural Competencies :</strong></p>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural1">Strategic Thinking</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="structural1"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural2">Decision Making</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="structural2"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural3">Change Management</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="structural3"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural4">Managing Team</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="structural4"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural5">Developing Team</label>
+                    <div class="col-sm-6">
+                      <input
+                        readonly
+                        type="text"
+                        class="form-control"
+                        id="structural5"
+                        placeholder="3-Competent"
+                      />
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!--end Standard Competency-->
+
+            <!--Individual Result-->
+            <div class="col-sm-6">
+              <div class="mt-1 mb-3 p-3 button-container border bg-white shadow-sm custom-tabs">
+                <h6 class="mb-3"><strong>Individual Result</strong></h6>
+                <form action="" class="mt-3">
+                  <p class="text-success"><strong>Core Competencies :</strong></p>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core1">Integrity</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core1">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core2">Creative-Innovative</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core2">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core3">Drive to Excellence</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core3">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core4">Caring</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core4">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core5">Continuous Learning</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core5">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="core6">Persistent</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="core6">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+
+                  <p class="text-success"><strong>Structural Competencies :</strong></p>
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural1">Strategic Thinking</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="structural1">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural2">Decision Making</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="structural2">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural3">Change Management</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="structural3">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural4">Managing Team</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="structural4">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label class="control-label col-sm-6" for="structural5">Developing Team</label>
+                    <div class="col-sm-6">
+                      <select required class="form-control" id="structural5">
+                        <option>1-Novice</option>
+                        <option>2-Intermediate</option>
+                        <option>3-Competent</option>
+                        <option>4-Advance</option>
+                        <option>5-Expert</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <!--end Individual Result-->
+          </div>
+          <!-- End Competency Assessment -->
+
+          <!-- Summary Assessment -->
+          <h5 class="mb-3 mt-3 text-theme"><strong>Summary Assessment</strong></h5>
+          <div class="row mt-3">
+            <div class="col-sm-12">
+              <form class="form-horizontal mt-4 mb-5">
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="input-1">Potensi Kekuatan</label>
+                  <div class="col-sm-9">
+                    <textarea rows="3" class="form-control" id="input-11" placeholder="Isikan deskripsi potensi kekuatannya"></textarea>
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="input-1">Potensi Kelemahan</label>
+                  <div class="col-sm-9">
+                    <textarea rows="3" class="form-control" id="input-11" placeholder="Isikan deskripsi potensi kelemahannya"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Summary Assessment -->
+
+
+          <!-- Set Projects -->
+          <h5 class="mb-3 mt-3 text-theme"><strong>Set Projects</strong></h5>
+          <div class="row mt-3">
+            <div class="col-sm-12 col-12 mb-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="project" />
+                <label class="custom-control-label" for="project">Need Project</label>
+              </div>
+              <p>
+                <em><small>klik tandai (centang) jika karyawan terkait akan diberikan project</small></em>
+              </p>
+            </div>
+
+            <div class="col-sm-12">
+              <form class="form-horizontal mb-5">
+                <div class="form-group row">
+                  <label class="control-label col-sm-3" for="project">Project Name</label>
+                  <div class="col-sm-9">
+                    <textarea rows="3" class="form-control" id="project" placeholder="Isikan deskripsi project yang diberikan"></textarea>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <!-- End Set Projects -->
+
+          <p>
+            <em>Last Updated by : Arip Zainul - 29 Nov 2021</em>
+          </p>
+
+
+          <!-- Buttons -->
+          <button type="submit" class="mt-5 btn btn-primary">Save Changes</button>
+          <button type="submit" class="mt-5 btn btn-secondary"><a class="text-white" href="set_development.html">Back</a></button>
+          <!-- End Buttons -->
+          
+
+          <!--Footer-->
+          <div class="row mt-5 mb-4 footer">
+            <div class="col-sm-8">
+              <span>&copy; This Apps Collaborate OD Officer & EIS Officer</span>
+            </div>
+          </div>
+          <!--Footer-->
+        </div>
+        <!-- End Content Right -->
+
+
+      </div>
+      <!--Main Content-->
+    </div>
+    <!--Page Wrapper-->
+
+    <!-- Page JavaScript Files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!--Popper JS-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--Bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--Datatable-->
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+
+    <!--Custom Js Script-->
+    <script src="assets/js/custom.js"></script>
+    <!--Custom Js Script-->
+
+    <!-- Datatable -->
+    <script>
+      $("#data_table").DataTable();
+    </script>
+  </body>
+</html>

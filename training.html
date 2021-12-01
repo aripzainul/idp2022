@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!--Meta Responsive tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!--Favicon Icon-->
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <!--Custom style.css-->
+    <link rel="stylesheet" href="assets/css/quicksand.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <!--Animate CSS-->
+    <link rel="stylesheet" href="assets/css/animate.min.css" />
+
+    <!--Datatable-->
+    <link rel="stylesheet" href="assets/css/dataTables.bootstrap4.min.css" />
+
+    <title>Individual Development Program</title>
+  </head>
+
+  <body>
+    <!--Page Wrapper-->
+    <div class="container-fluid">
+      <!--Header-->
+      <div class="row header shadow-sm">
+        <!--Logo-->
+        <div class="col-sm-3 pl-0 text-center header-logo">
+          <div class="bg-theme mr-3 pt-3 pb-2 mb-0">
+            <h3 class="logo"><a href="#" class="text-secondary logo">Individual Dev. Program</a></h3>
+          </div>
+        </div>
+        <!--End Logo-->
+
+        <!--Header Menu-->
+        <div class="col-sm-9 header-menu pt-2 pb-0">
+          <div class="row">
+            <!--Menu Icons-->
+            <div class="col-sm-4 col-8 pl-0">
+              <!--Toggle sidebar-->
+              <span class="menu-icon" onclick="toggle_sidebar()">
+                <span id="sidebar-toggle-btn"></span>
+              </span>
+              <!--End Toggle sidebar-->
+            </div>
+            <!--End Menu Icons-->
+
+            <!--avatar-->
+            <div class="col-sm-8 col-4 text-right flex-header-menu justify-content-end">
+              <div class="mr-4">
+                <a
+                  class=""
+                  href="#"
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  <img src="assets/img/my_img/arip.jpg" alt="Adam" class="rounded-circle" width="40px" height="40px" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-right mt-13" aria-labelledby="dropdownMenuLink">
+                  <a class="dropdown-item" href="#"><i class="fa fa-home pr-2"></i> Go to HC Online</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><i class="fa fa-power-off pr-2"></i> Logout</a>
+                </div>
+              </div>
+            </div>
+            <!--End avatar-->
+          </div>
+        </div>
+        <!--End Header Menu-->
+      </div>
+      <!--Header-->
+
+      <!--Main Content-->
+      <div class="row main-content">
+        <!--Sidebar left-->
+        <div class="col-sm-3 col-xs-6 sidebar pl-0">
+          <div class="inner-sidebar mr-3">
+            <!--Image Avatar-->
+            <div class="avatar text-center">
+              <img src="assets/img/my_img/arip.jpg" alt="" class="rounded-circle" />
+              <p><strong>Arip Zainul Faizin</strong></p>
+              <span class="text-warning small"><strong>Organization Development Officer</strong></span>
+            </div>
+            <!--End Image Avatar-->
+
+            <!--Sidebar Navigation Menu-->
+            <div class="sidebar-menu-container">
+              <ul class="sidebar-menu mt-4 mb-4">
+                <li class="parent">
+                  <a href="index.html" class=""
+                    ><i class="fa fa-dashboard mr-3"></i>
+                    <span class="none">Homepage </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="training.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Master Training </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="blogs.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Master Blogs </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="set_development.html" target="_blank" class=""
+                    ><i class="fa fa-cog mr-3"></i>
+                    <span class="none">Set Training & Competency </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="#" class=""
+                    ><i class="fa fa-home mr-3"></i>
+                    <span class="none">Go to HC Online </span>
+                  </a>
+                </li>
+
+                <li class="parent">
+                  <a href="#" class=""
+                    ><i class="fa fa-power-off mr-3"></i>
+                    <span class="none">Log Out </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <!--Sidebar Navigation Menu-->
+          </div>
+        </div>
+        <!--End Sidebar left-->
+
+        <!--Content right-->
+        <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
+          <h5 class="mb-4 text-theme"><strong>Master Training</strong></h5>
+
+          <div class="row">
+            <div class="col-sm-9">
+              <a href="#" target="_blank" class="badge badge-pill badge-primary p-2"
+                ><i class="fa fa-plus"></i> Add Training
+              </a>
+            </div>
+            <div class="col-sm-3">
+              <div class="form-group row">
+                <div class="col-sm-6">
+                  <select class="form-control" id="active">
+                    <option>Active</option>
+                    <option>Inactive</option>
+                    <option>All Status</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Data Table -->
+          <div class="row mt-1">
+            <div class="col-sm-12">
+              <!--Datatable-->
+              <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                <div class="table-responsive">
+                  <table id="data_table" class="table table-striped table-bordered text-center">
+                    <thead class="bg-theme">
+                      <tr>
+                        <th>No</th>
+                        <th>Training Name</th>
+                        <th>Media</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td class="text-left">Service Excellence</td>
+                        <td class="text-left">e-Learning</td>
+                        <td>
+                          <span class="badge badge-pill badge-primary">Active</span>
+                        </td>
+                        <td>
+                          <a href="#"class="badge badge-info badge-pill text-white"
+                            ><i class="fa fa-edit"></i> Manage
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>2</td>
+                        <td class="text-left">Metode SMART</td>
+                        <td class="text-left">e-Learning</td>
+                        <td>
+                          <span class="badge badge-pill badge-primary">Active</span>
+                        </td>
+                        <td>
+                          <a href="#" class="badge badge-info badge-pill text-white"
+                            ><i class="fa fa-edit"></i> Manage
+                          </a>
+                        </td>
+                      </tr>
+
+                      <tr>
+                        <td>3</td>
+                        <td class="text-left">7 Winning Character</td>
+                        <td class="text-left">On-Class</td>
+                        <td>
+                          <span class="badge badge-pill badge-danger">Inactive</span>
+                        </td>
+                        <td>
+                          <a href="#" class="badge badge-info badge-pill text-white"
+                            ><i class="fa fa-edit"></i> Manage
+                          </a>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <!--End Datatable-->
+            </div>
+          </div>
+          <!-- End Data Table -->
+
+          <!--Footer-->
+          <div class="row mt-5 mb-4 footer">
+            <div class="col-sm-8">
+              <span>&copy; This Apps Collaborate OD Officer & EIS Officer</span>
+            </div>
+          </div>
+          <!--Footer-->
+        </div>
+        <!-- End Content Right -->
+      </div>
+      <!--Main Content-->
+    </div>
+    <!--Page Wrapper-->
+
+    <!-- Page JavaScript Files-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <!--Popper JS-->
+    <script src="assets/js/popper.min.js"></script>
+    <!--Bootstrap-->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!--Datatable-->
+    <script src="assets/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/dataTables.bootstrap4.min.js"></script>
+
+    <!--Custom Js Script-->
+    <script src="assets/js/custom.js"></script>
+    <!--Custom Js Script-->
+
+    <!-- Datatable -->
+    <script>
+      $("#data_table").DataTable();
+    </script>
+  </body>
+</html>
