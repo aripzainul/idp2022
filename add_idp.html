@@ -30,6 +30,7 @@
     <title>Individual Development Program</title>
   </head>
 
+
   <body>
     <!--Page Wrapper-->
     <div class="container-fluid">
@@ -78,6 +79,7 @@
               </div>
             </div>
             <!--End avatar-->
+
           </div>
         </div>
         <!--End Header Menu-->
@@ -108,7 +110,7 @@
                 </li>
 
                 <li class="parent">
-                  <a href="training.html" target="_blank" class=""
+                  <a href="training.html" class=""
                     ><i class="fa fa-cog mr-3"></i>
                     <span class="none">Master Training </span>
                   </a>
@@ -148,106 +150,89 @@
         </div>
         <!--End Sidebar left-->
 
+
         <!--Content right-->
         <div class="col-sm-9 col-xs-12 content pt-3 pl-0">
-          <h5 class="mb-4 text-theme"><strong>Master Training</strong></h5>
+          <h5 class="mb-4 text-theme"><strong>Add IDP Non MPP</strong></h5>
 
-          <div class="row mb-1">
-            <div class="col-sm-9">
-              <a href="add_training.html" class="badge badge-pill badge-primary text-white p-2"
-                ><i class="fa fa-plus"></i> Add Training
-              </a>
-            </div>
-            <div class="col-sm-3">
-              <div class="form-group row">
-                <div class="col-sm-9">
-                  <select class="form-control" id="active">
-                    <option>Active</option>
-                    <option>Inactive</option>
-                    <option>All Status</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Data Table -->
-          <div class="row mt-1">
+          <!-- Form Add -->
+          <div class="row mt-3">
             <div class="col-sm-12">
-              <!--Datatable-->
-              <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
-                <div class="table-responsive">
-                  <table id="data_table" class="table table-striped table-bordered text-center">
-                    <thead class="bg-theme">
-                      <tr>
-                        <th>No</th>
-                        <th>Training Name</th>
-                        <th>Media</th>
-                        <th>Status</th>
-                        <th>Action</th>
-                      </tr>
-                    </thead>
 
-                    <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td class="text-left">Service Excellence</td>
-                        <td class="text-left">e-Learning</td>
-                        <td>
-                          <span class="badge badge-pill badge-primary">Active</span>
-                        </td>
-                        <td>
-                          <a href="#"class="badge badge-info badge-pill text-white"
-                            ><i class="fa fa-edit"></i> Manage
-                          </a>
-                        </td>
-                      </tr>
+               <div class="mt-1 mb-3 p-3 button-container bg-white border shadow-sm">
+                  <form action="" class="form-horizontal mt-4 mb-5">
+                     <div class="form-group row">
+                        <label for="submitterName" class="control-label col-sm-3">Submitter Name</label>
+                        <div class="col-sm-9">
+                           <select class="form-control" id="submitterName">
+                              <option>Submitter Name</option>
+                              <option>Submitter A</option>
+                              <option>Submitter B</option>
+                              <option>Submitter C</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="employeeName" class="control-label col-sm-3">Employee Name</label>
+                        <div class="col-sm-9">
+                           <select class="form-control" id="employeeName">
+                              <option>Employee Name</option>
+                              <option>Employee A</option>
+                              <option>Employee B</option>
+                              <option>Employee C</option>
+                           </select>
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                        <label class="control-label col-sm-3" for="input-1">Role Existing</label>
+                        <div class="col-sm-9">
+                           <input readonly type="text" class="form-control" id="input-1" placeholder="PMOR" />
+                        </div>
+                     </div>
+                     <div class="form-group row">
+                     <label for="idpType" class="control-label col-sm-3">IDP Type</label>
+                     <div class="col-sm-9">
+                        <select class="form-control" id="idpType">
+                           <option>Promosi Jabatan</option>
+                           <option>Pengembangan Karyawan Potensial</option>
+                        </select>
+                     </div>
+                     </div>
+                     <div class="form-group row">
+                        <label for="employeeName" class="control-label col-sm-3">Role Plan</label>
+                        <div class="col-sm-9">
+                           <select class="form-control" id="employeeName">
+                              <option>Role Plan</option>
+                              <option>Role A</option>
+                              <option>Role B</option>
+                              <option>Role C</option>
+                           </select>
+                        </div>
+                     </div>
 
-                      <tr>
-                        <td>2</td>
-                        <td class="text-left">Metode SMART</td>
-                        <td class="text-left">e-Learning</td>
-                        <td>
-                          <span class="badge badge-pill badge-primary">Active</span>
-                        </td>
-                        <td>
-                          <a href="#" class="badge badge-info badge-pill text-white"
-                            ><i class="fa fa-edit"></i> Manage
-                          </a>
-                        </td>
-                      </tr>
+                     <div class="form-group mt-5">
+                        <button type="submit" class="btn btn-secondary"><a class="text-white" href="index.html">Back</a></button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+                  </form>
+               </div>
 
-                      <tr>
-                        <td>3</td>
-                        <td class="text-left">7 Winning Character</td>
-                        <td class="text-left">On-Class</td>
-                        <td>
-                          <span class="badge badge-pill badge-danger">Inactive</span>
-                        </td>
-                        <td>
-                          <a href="#" class="badge badge-info badge-pill text-white"
-                            ><i class="fa fa-edit"></i> Manage
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-              <!--End Datatable-->
             </div>
           </div>
-          <!-- End Data Table -->
+          <!-- End Form Add -->
 
-          <!--Footer-->
+          
+          <!--Footer--> 
           <div class="row mt-5 mb-4 footer">
             <div class="col-sm-8">
               <span>&copy; This Apps Collaborate OD Officer & EIS Officer</span>
             </div>
           </div>
           <!--Footer-->
+
         </div>
         <!-- End Content Right -->
+
       </div>
       <!--Main Content-->
     </div>
